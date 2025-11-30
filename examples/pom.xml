@@ -7,7 +7,7 @@
 
     <parent>
         <artifactId>rest-utils-parent</artifactId>
-        <groupId>io.confluent</groupId>
+        <groupId>io.arenadata.confluent</groupId>
         <version>7.9.1</version>
     </parent>
 
@@ -17,13 +17,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>io.arenadata.confluent</groupId>
             <artifactId>rest-utils</artifactId>
             <version>${io.confluent.rest-utils.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>io.arenadata.confluent</groupId>
             <artifactId>rest-utils-test</artifactId>
             <version>${io.confluent.rest-utils.version}</version>
             <scope>test</scope>

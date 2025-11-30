@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.confluent</groupId>
+        <groupId>io.arenadata.confluent</groupId>
         <artifactId>rest-utils-parent</artifactId>
         <version>7.9.1</version>
     </parent>
@@ -17,7 +17,7 @@
     <!-- Dependencies are required only to ensure this module is built last. -->
     <dependencies>
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>io.arenadata.confluent</groupId>
             <artifactId>rest-utils</artifactId>
             <version>${io.confluent.rest-utils.version}</version>
         </dependency>

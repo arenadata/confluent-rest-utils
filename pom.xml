@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.confluent</groupId>
+        <groupId>io.arenadata.confluent</groupId>
         <artifactId>common</artifactId>
         <version>7.9.1</version>
     </parent>
@@ -48,6 +48,14 @@
         <module>fips-tests</module>
     </modules>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/arenadata/confluent-rest-utils</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <activation.version>1.1.1</activation.version>
         <apache.httpclient.version>4.5.13</apache.httpclient.version>
@@ -65,24 +73,28 @@
             <name>Confluent</name>
             <url>${confluent.maven.repo}</url>
         </repository>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/arenadata/*</url>
+        </repository>
     </repositories>
 
     <dependencyManagement>
         <dependencies>
             <!--this is for children-->
             <dependency>
-                <groupId>io.confluent</groupId>
+                <groupId>io.arenadata.confluent</groupId>
                 <artifactId>rest-utils</artifactId>
                 <version>${io.confluent.rest-utils.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.confluent</groupId>
+                <groupId>io.arenadata.confluent</groupId>
                 <artifactId>rest-utils-test</artifactId>
                 <version>${io.confluent.rest-utils.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>io.confluent</groupId>
+                <groupId>io.arenadata.confluent</groupId>
                 <artifactId>rest-utils-fips-tests</artifactId>
                 <version>${io.confluent.rest-utils.version}</version>
                 <scope>test</scope>

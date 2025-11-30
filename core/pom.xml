@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.confluent</groupId>
+        <groupId>io.arenadata.confluent</groupId>
         <artifactId>rest-utils-parent</artifactId>
         <version>7.9.1</version>
     </parent>
@@ -104,7 +104,7 @@
             <artifactId>jackson-annotations</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.kafka</groupId>
+            <groupId>io.arenadata.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
         </dependency>
         <dependency>
@@ -145,13 +145,13 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.kafka</groupId>
+            <groupId>io.arenadata.kafka</groupId>
             <artifactId>kafka_${kafka.scala.version}</artifactId>
             <classifier>test</classifier>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.kafka</groupId>
+            <groupId>io.arenadata.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
             <classifier>test</classifier>
             <scope>test</scope>
