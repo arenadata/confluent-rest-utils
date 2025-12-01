@@ -56,6 +56,13 @@
         </repository>
     </distributionManagement>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/arenadata/confluent-rest-utils</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <properties>
         <activation.version>1.1.1</activation.version>
         <apache.httpclient.version>4.5.13</apache.httpclient.version>
